@@ -15,21 +15,21 @@ const homeConfig = {
         "Machine Learning Specialist",
     ],
     about: {
-        start:"I am an AI Postdoc researcher and a data scientist with a strong background in healthcare applications."+
-        " I have led research projects focused on improving patient care in Intensive Care Units (ICUs)."+ 
-        "My work integrates cutting-edge techniques such as federated learning and explainable AI to develop interpretable and privacy-preserving models."+
-        "My contributions have been published in reputable journals.",
-        exit:"I am fluent in Python, SQL databases, ML frameworks, and more, "+
-        "with a deep interest in machine learning and time-series data analysis."
+        start:"I am an AI postdoc researcher and a data scientist with a strong background in healthcare applications."+
+        " I have contributed in research projects focused on improving patient care in Intensive Care Units (ICUs)."+ 
+        " My work integrates cutting-edge techniques such as federated learning and explainable AI to develop interpretable and privacy-preserving models."+
+        " My contributions have been published in reputable journals.",
+        exit:" I am fluent in Python, SQL databases, ML frameworks, MLOps , and more. "+
+        " I am deeply interested in machine learning and time-series data analysis."
         },
     workTimeline: [
         {
             id: "work-2",
-            title: "Post-doctoral Researcher",
-            company: "UK Augsburg",
-            description: "Developing the SAFICU project, which focuses on applying machine learning techniques to improve pa- tient care in Intensive Care Units (ICUs) " +
-                "Overseeing M.Sc. and B.Sc. students, providing guidance and mentorship in their research projects"+
-                "Conducting cutting-edge research on federated learning",
+            title: "Postdoctoral Researcher",
+            company: "University of Augsburg, Germany",
+            description: "Developing the SAFICU project, which focuses on applying machine learning techniques to improve patient care in Intensive Care Units (ICUs)." +
+                " Overseeing M.Sc. and B.Sc. students, providing guidance and mentorship in their research projects."+
+                " Conducting cutting-edge research on federated learning.",
             date: "2021-present",
             icon: <DiCodeigniter/>,
             tags: ["ml", "fl", "python", "docker","flower", "kubeflow", "mlflow", "weights&biases"]
@@ -39,8 +39,8 @@ const homeConfig = {
             title: "Research Fellow",
             company: "FBK, Italy",
             description: "Applied machine learning techniques to analyze ICU’s electronic health records, aiming to detect and predict various clinical outcomes, contributing to improved patient care." +
-                "Published multiple scientific articles in peer-reviewed journals, showcasing research contributions and innovations in the field of AI and healthcare." +
-                "Utilized machine learning algorithms to detect anomalies in wastewater plants",
+                " Published multiple scientific articles in peer-reviewed journals, showcasing research contributions and innovations in the field of AI and healthcare." +
+                " Utilized machine learning algorithms to detect anomalies in wastewater plants.",
             date: "2017-2021",
             icon: <GiCommercialAirplane/>,
             tags: ["ml", "postgres", "python", "pytorch", "captum"]
@@ -48,7 +48,7 @@ const homeConfig = {
         {
             id: "work-0",
             title: "ML Intern",
-            company: "ALTILIA s.r.l.",
+            company: "ALTILIA, Italy",
             description: "Developed and implemented natural language processing methods, leveraging techniques such as text classification and sentiment analysis.",
             date: "2016-2017",
             icon: <BsClipboardData/>,
