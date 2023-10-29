@@ -47,7 +47,7 @@ const homeConfig = {
         },
         {
             id: "work-0",
-            title: "ML Intern",
+            title: "Intern",
             company: "ALTILIA, Italy",
             description: "Developed and implemented natural language processing methods, leveraging techniques such as text classification and sentiment analysis.",
             date: "2016-2017",
