@@ -135,17 +135,17 @@ const projectConfig = [
                 name: "repo",
                 url: "https://github.com/mostafaalishahi/Genetic_engineering_attribution_challenge_2020",
                 icon: <AiFillGithub/>
-            },
-            {
-                name: "fork",
-                url: "https://github.com/mostafaalishahi/Genetic_engineering_attribution_challenge_2020/fork",
-                icon: <BiGitRepoForked/>
-            },
-            {
-                name: "subscription",
-                url: "https://github.com/mostafaalishahi/Genetic_engineering_attribution_challenge_2020/subscription",
-                icon: <AiFillEye/>
             }
+            // {
+            //     name: "fork",
+            //     url: "https://github.com/mostafaalishahi/Genetic_engineering_attribution_challenge_2020/fork",
+            //     icon: <BiGitRepoForked/>
+            // },
+            // {
+            //     name: "subscription",
+            //     url: "https://github.com/mostafaalishahi/Genetic_engineering_attribution_challenge_2020/subscription",
+            //     icon: <AiFillEye/>
+            // }
         ],
         image: sklearnGenetic,
         description: "This repository contains the code for the Genetic Engineering Attribution Challenge."+
