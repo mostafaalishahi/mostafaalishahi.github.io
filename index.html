@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mostafa Sheikhalishahi - Data Scientist and AI Researcher</title>
     <link rel="stylesheet" href="styles.css">
@@ -6,7 +10,29 @@
     <style>
         /* Add some inline styles for enhanced presentation */
         .skills-container {
-	@@ -34,6 +36,71 @@
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill-set {
+            flex: 1 1 calc(50% - 40px);
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .skill-set h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .skill {
+            margin-bottom: 20px;
+        }
+        .skill p {
+            margin: 5px 0;
+        }
+        .skills-container .skill-set:hover {
             background-color: #e0f7fa;
             border-color: #4db6ac;
         }
@@ -78,7 +104,12 @@
     </style>
 </head>
 <body>
-	@@ -46,22 +113,22 @@ <h1> Mostafa Sheikhalishahi</h1>
+    <header>
+        <div class="hero">
+            <h1>Mostafa Sheikhalishahi</h1>
+            <p>Data Scientist and AI Researcher</p>
+        </div>
+    </header>
 
     <nav>
         <ul>
@@ -101,7 +132,28 @@
         <div class="card">
             <h3>Post-Doc Researcher</h3>
             <p><strong>Institute for Digital Medicine (IDM), Augsburg University Hospital</strong></p>
-	@@ -90,7 +157,7 @@ <h3>Ph.D. Research Fellow</h3>
+            <p><strong>12/2021 - Present</strong> | Augsburg, Germany</p>
+            <p>At IDM, I work on the SAFICU project, which aims to revolutionize patient care in Intensive Care Units (ICUs) by applying federated learning techniques. This project involves developing AI models that can work across multiple institutions while preserving patient privacy. My role includes conducting advanced research on federated learning and explainable AI, mentoring students, and contributing to high-impact publications and international conferences.</p>
+            <p>Key responsibilities include:</p>
+            <ul>
+                <li>Designing and implementing federated learning frameworks for real-time ICU monitoring.</li>
+                <li>Developing models that balance interpretability and accuracy to assist healthcare professionals.</li>
+                <li>Overseeing the research progress of M.Sc. and B.Sc. students, guiding them through their projects.</li>
+                <li>Publishing findings in leading journals and presenting at global conferences to share insights and advancements.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Ph.D. Research Fellow</h3>
+            <p><strong>Digital Health and Wellbeing Unit, Fondazione Bruno Kessler (FBK)</strong></p>
+            <p><strong>11/2017 - 07/2021</strong> | Trento, Italy</p>
+            <p>During my tenure at FBK, I focused on harnessing machine learning to improve clinical outcomes through data-driven insights. My work involved analyzing electronic health records from ICUs to predict patient conditions and detect anomalies. I also developed algorithms for environmental monitoring in wastewater treatment, showcasing the versatility of machine learning techniques across different domains.</p>
+            <p>Key accomplishments include:</p>
+            <ul>
+                <li>Developing predictive models for ICU patient outcomes, enhancing decision-making and patient care.</li>
+                <li>Creating algorithms for detecting anomalies in wastewater treatment processes, contributing to environmental health.</li>
+                <li>Publishing influential papers in top-tier AI and healthcare journals and presenting research at prominent conferences.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="projects">
@@ -109,7 +161,13 @@
         <div class="project">
             <h3>Genetic Engineering Attribution Challenge</h3>
             <p>The objective of this challenge was to predict the laboratory of origin for plasmid DNA sequences. Our proposed model was ranked <strong>14th</strong> on the private leaderboard out of <strong>1211</strong> competitors.</p>
-	@@ -104,70 +171,74 @@ <h3>Milan Critical Care Datathon</h3>
+            <p>For more details, visit our <a href="https://github.com/mostafaalishahi/Genetic_engineering_attribution_challenge_2020" target="_blank"><strong>GitHub repository</strong></a>.</p>
+        </div>
+        <div class="project">
+            <h3>Milan Critical Care Datathon</h3>
+            <p>The objective was to develop an algorithm to predict the need for blood gas analysis in critically ill patients in the ICU. Our team won <strong>First Prize</strong>, sponsored by Google, among <strong>10</strong> competing teams.</p>
+            <p>Learn more about the datathon from this <a href="https://magazine.fbk.eu/en/news/fbk-trentinosalute4-0-researchers-winners-of-milan-critical-care-unit-datathon-2019/" target="_blank"><strong>news article</strong></a>.</p>
+        </div>
     </section>
 
     <section id="skills">
@@ -184,3 +242,7 @@
     </section>
 
     <footer>
+        <p>&copy; 2024 Mostafa Sheikhalishahi</p>
+    </footer>
+</body>
+</html>
