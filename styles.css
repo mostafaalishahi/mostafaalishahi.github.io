@@ -178,7 +178,8 @@ footer {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(51, 51, 51, 0.9);
+        background-color: #333;
+        z-index: 1000;
     }
 
     nav ul {
@@ -191,7 +192,7 @@ footer {
     }
 
     nav ul li a {
-        padding: 10px;
+        padding: 10px 5px;
         font-size: 0.8em;
         text-align: center;
     }
@@ -211,7 +212,19 @@ footer {
     }
 
     main {
-        padding-bottom: 60px; /* Add space for the fixed bottom nav */
+        padding-bottom: 70px; /* Increase space for the fixed bottom nav */
+    }
+
+    body {
+        padding-top: 0; /* Remove any top padding */
+    }
+
+    /* Remove any fixed positioning on the body or html */
+    html, body {
+        position: static;
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
     }
 }
 
