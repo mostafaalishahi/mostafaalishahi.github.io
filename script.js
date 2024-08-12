@@ -1,3 +1,4 @@
+// script.js
 
 document.addEventListener('DOMContentLoaded', (event) => {
     // Smooth scrolling for navigation links
