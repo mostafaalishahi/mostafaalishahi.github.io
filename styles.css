@@ -139,21 +139,115 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* ... (previous CSS remains the same) ... */
+
 /* Contact section */
 .social-icons {
     margin-top: 20px;
+    text-align: center;
 }
 
 .social-icons a {
     color: #007BFF;
-    font-size: 1.5em;
-    margin-right: 15px;
+    font-size: 2em;
+    margin: 0 15px;
     transition: color 0.3s ease;
+    display: inline-block;
 }
 
 .social-icons a:hover {
     color: #0056b3;
 }
+
+/* Language progress bars */
+.language-skills {
+    margin-top: 20px;
+}
+
+.language-skill {
+    margin-bottom: 15px;
+}
+
+.language-skill p {
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 20px;
+    background-color: #007BFF;
+    transition: width 0.5s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 60px;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 10px 5px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    nav ul li a i {
+        display: block;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a span {
+        display: none;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    main {
+        padding-bottom: 80px;
+    }
+}
+
+/* Safari-specific fix */
+@supports (-webkit-touch-callout: none) {
+    body {
+        /* The hack for Safari */
+        height: -webkit-fill-available;
+    }
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+/* ... (rest of the CSS remains the same) ... */
 
 /* Footer styles */
 footer {
@@ -202,59 +296,3 @@ footer {
     }
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    body {
-        padding-bottom: 60px; /* Add space for the fixed bottom nav */
-    }
-
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    header p {
-        font-size: 1.2em;
-    }
-
-    nav {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: auto;
-        background-color: #333;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    nav ul li {
-        margin: 0;
-    }
-
-    nav ul li a {
-        padding: 10px 5px;
-        font-size: 0.8em;
-        text-align: center;
-    }
-
-    nav ul li a i {
-        display: block;
-        font-size: 1.2em;
-        margin-bottom: 5px;
-    }
-
-    nav ul li a span {
-        display: none;
-    }
-
-    .skills-container {
-        flex-direction: column;
-    }
-
-    main {
-        padding-bottom: 80px; /* Increase space for the fixed bottom nav */
-    }
-}
