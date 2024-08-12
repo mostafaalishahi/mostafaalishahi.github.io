@@ -5,11 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mostafa Sheikhalishahi - AI Researcher</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add some inline styles for enhanced presentation */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill-set {
+            flex: 1 1 calc(50% - 40px);
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .skill-set h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .skill {
+            margin-bottom: 20px;
+        }
+        .skill p {
+            margin: 5px 0;
+        }
+        .skills-container .skill-set:hover {
+            background-color: #e0f7fa;
+            border-color: #4db6ac;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="hero">
-            <h1>Mostafa Sheikhalishahi</h1>
+            <h1> Mostafa Sheikhalishahi</h1>
             <p>Artificial Intelligence Researcher with expertise in federated learning and explainable AI.</p>
             <a href="#contact" class="btn-primary">Get in Touch</a>
         </div>
@@ -76,18 +106,60 @@
 
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skill-set">
-            <div class="skill">
-                <h3>Programming</h3>
-                <p>Proficient in Python and its libraries, including Pandas, Numpy, Scipy, and PySpark. Experienced with data manipulation, analysis, and visualization using tools like Scikit-learn, Matplotlib, and Seaborn.</p>
+        <div class="skills-container">
+            <div class="skill-set">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <h4>Programming Languages</h4>
+                    <p>Python, Bash</p>
+                </div>
+                <div class="skill">
+                    <h4>Data Analysis</h4>
+                    <p>Pandas, Polars, Numpy, Scipy</p>
+                </div>
+                <div class="skill">
+                    <h4>Machine Learning & AI</h4>
+                    <p>Keras, Pytorch, Captum (Explainable AI), Flower (Federated Learning), Time-series Analysis</p>
+                </div>
+                <div class="skill">
+                    <h4>Large Language Models</h4>
+                    <p>OpenAI API, Llama3, LlamaIndex</p>
+                </div>
+                <div class="skill">
+                    <h4>DevOps & Tools</h4>
+                    <p>Kubernetes, Docker, GitHub, MLflow, Weights & Biases, Prefect, Grafana</p>
+                </div>
+                <div class="skill">
+                    <h4>Cloud Services</h4>
+                    <p>AWS Sagemaker, AWS S3, AWS Glue, AWS Step Functions, AWS Lambda</p>
+                </div>
             </div>
-            <div class="skill">
-                <h3>Machine Learning & AI</h3>
-                <p>Expert in machine learning frameworks such as Keras and Pytorch. Skilled in developing and deploying explainable AI models using Captum and federated learning techniques with Flower. Adept at time-series analysis and applying these techniques to real-world problems.</p>
-            </div>
-            <div class="skill">
-                <h3>Databases & Tools</h3>
-                <p>Experienced with PostgreSQL, Qdrant, and Elasticsearch for database management. Proficient in DevOps tools and practices, including Docker, Kubernetes, GitHub, and MLflow. Familiar with cloud services such as AWS Sagemaker, AWS S3, and AWS Lambda.</p>
+            <div class="skill-set">
+                <h3>Soft Skills</h3>
+                <div class="skill">
+                    <h4>Analytical Thinking</h4>
+                    <p>Strong ability to analyze complex problems and develop effective solutions.</p>
+                </div>
+                <div class="skill">
+                    <h4>Creative Problem-Solving</h4>
+                    <p>Proven track record of innovative approaches to research and development challenges.</p>
+                </div>
+                <div class="skill">
+                    <h4>Communication</h4>
+                    <p>Excellent skills in presenting complex ideas clearly to both technical and non-technical audiences.</p>
+                </div>
+                <div class="skill">
+                    <h4>Team Collaboration</h4>
+                    <p>Experience working effectively in multidisciplinary teams and mentoring students.</p>
+                </div>
+                <div class="skill">
+                    <h4>Teaching & Mentoring</h4>
+                    <p>Experienced in guiding and supporting students in their research projects.</p>
+                </div>
+                <div class="skill">
+                    <h4>Languages</h4>
+                    <p>English (Fluent), Persian (Native), Italian (Fluent), German (Beginner)</p>
+                </div>
             </div>
         </div>
     </section>
