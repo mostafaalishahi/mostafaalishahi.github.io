@@ -5,103 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mostafa Sheikhalishahi - Data Scientist and AI Researcher</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Add some inline styles for enhanced presentation */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .skill-set {
-            flex: 1 1 calc(50% - 40px);
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background: #f9f9f9;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .skill-set h3 {
-            margin-top: 0;
-            color: #333;
-        }
-        .skill {
-            margin-bottom: 20px;
-        }
-        .skill p {
-            margin: 5px 0;
-        }
-        .skills-container .skill-set:hover {
-            background-color: #e0f7fa;
-            border-color: #4db6ac;
-        }
-        header {
-            background: url('hero-background.jpg') no-repeat center center/cover;
-            color: #fff;
-            padding: 100px 20px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .hero p {
-            font-size: 1.5em;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        .card {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .card h3 {
-            margin-top: 0;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        .project h3 {
-            margin-top: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-        }
-        .social-icons {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        .social-icons a {
-            color: #333;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #007bff;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -111,7 +16,7 @@
         </div>
     </header>
 
-    <nav>
+    <nav id="navbar">
         <ul>
             <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
             <li><a href="#work"><i class="fas fa-briefcase"></i> Work</a></li>
@@ -121,128 +26,87 @@
         </ul>
     </nav>
 
-    <section id="about">
-        <h2><i class="fas fa-user"></i> About Me</h2>
-        <p>I am a dedicated Data Scientist and Artificial Intelligence researcher with a robust background in applying cutting-edge machine learning techniques to healthcare. My work primarily focuses on leveraging federated learning and explainable AI to enhance patient care and healthcare systems. With extensive experience in both research and practical applications, I am committed to advancing technology that can provide tangible benefits in medical settings.</p>
-        <p>My career has been characterized by a blend of rigorous academic research and real-world problem-solving. I hold a Ph.D. in Computer Science, during which I concentrated on the intersection of AI and healthcare. I am passionate about developing technologies that not only push the boundaries of what AI can achieve but also address critical issues such as data privacy and interpretability.</p>
-    </section>
+    <main>
+        <section id="about" class="section-card">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>I am a dedicated Data Scientist and Artificial Intelligence researcher with a robust background in applying cutting-edge machine learning techniques to healthcare. My work primarily focuses on leveraging federated learning and explainable AI to enhance patient care and healthcare systems.</p>
+            <p>With extensive experience in both research and practical applications, I am committed to advancing technology that can provide tangible benefits in medical settings. My career has been characterized by a blend of rigorous academic research and real-world problem-solving.</p>
+        </section>
 
-    <section id="work">
-        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
-        <div class="card">
-            <h3>Post-Doc Researcher</h3>
-            <p><strong>Institute for Digital Medicine (IDM), Augsburg University Hospital</strong></p>
-            <p><strong>12/2021 - Present</strong> | Augsburg, Germany</p>
-            <p>At IDM, I work on the SAFICU project, which aims to revolutionize patient care in Intensive Care Units (ICUs) by applying federated learning techniques. This project involves developing AI models that can work across multiple institutions while preserving patient privacy. My role includes conducting advanced research on federated learning and explainable AI, mentoring students, and contributing to high-impact publications and international conferences.</p>
-            <p>Key responsibilities include:</p>
-            <ul>
-                <li>Designing and implementing federated learning frameworks for real-time ICU monitoring.</li>
-                <li>Developing models that balance interpretability and accuracy to assist healthcare professionals.</li>
-                <li>Overseeing the research progress of M.Sc. and B.Sc. students, guiding them through their projects.</li>
-                <li>Publishing findings in leading journals and presenting at global conferences to share insights and advancements.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Ph.D. Research Fellow</h3>
-            <p><strong>Digital Health and Wellbeing Unit, Fondazione Bruno Kessler (FBK)</strong></p>
-            <p><strong>11/2017 - 07/2021</strong> | Trento, Italy</p>
-            <p>During my tenure at FBK, I focused on harnessing machine learning to improve clinical outcomes through data-driven insights. My work involved analyzing electronic health records from ICUs to predict patient conditions and detect anomalies. I also developed algorithms for environmental monitoring in wastewater treatment, showcasing the versatility of machine learning techniques across different domains.</p>
-            <p>Key accomplishments include:</p>
-            <ul>
-                <li>Developing predictive models for ICU patient outcomes, enhancing decision-making and patient care.</li>
-                <li>Creating algorithms for detecting anomalies in wastewater treatment processes, contributing to environmental health.</li>
-                <li>Publishing influential papers in top-tier AI and healthcare journals and presenting research at prominent conferences.</li>
-            </ul>
-        </div>
-    </section>
+        <section id="work" class="section-card">
+            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+            <div class="work-card">
+                <h3>Post-Doc Researcher</h3>
+                <p><strong>Institute for Digital Medicine (IDM), Augsburg University Hospital</strong></p>
+                <p><strong>12/2021 - Present</strong> | Augsburg, Germany</p>
+                <p>Working on the SAFICU project, applying federated learning techniques to revolutionize patient care in ICUs.</p>
+            </div>
+            <div class="work-card">
+                <h3>Ph.D. Research Fellow</h3>
+                <p><strong>Digital Health and Wellbeing Unit, Fondazione Bruno Kessler (FBK)</strong></p>
+                <p><strong>11/2017 - 07/2021</strong> | Trento, Italy</p>
+                <p>Focused on harnessing machine learning to improve clinical outcomes through data-driven insights.</p>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-        <div class="project">
-            <h3>Genetic Engineering Attribution Challenge</h3>
-            <p>The objective of this challenge was to predict the laboratory of origin for plasmid DNA sequences. Our proposed model was ranked <strong>14th</strong> on the private leaderboard out of <strong>1211</strong> competitors.</p>
-            <p>For more details, visit our <a href="https://github.com/mostafaalishahi/Genetic_engineering_attribution_challenge_2020" target="_blank"><strong>GitHub repository</strong></a>.</p>
-        </div>
-        <div class="project">
-            <h3>Milan Critical Care Datathon</h3>
-            <p>The objective was to develop an algorithm to predict the need for blood gas analysis in critically ill patients in the ICU. Our team won <strong>First Prize</strong>, sponsored by Google, among <strong>10</strong> competing teams.</p>
-            <p>Learn more about the datathon from this <a href="https://magazine.fbk.eu/en/news/fbk-trentinosalute4-0-researchers-winners-of-milan-critical-care-unit-datathon-2019/" target="_blank"><strong>news article</strong></a>.</p>
-        </div>
-    </section>
+        <section id="projects" class="section-card">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="project-card">
+                <h3>Genetic Engineering Attribution Challenge</h3>
+                <p>Ranked <strong>14th</strong> out of <strong>1211</strong> competitors in predicting the laboratory of origin for plasmid DNA sequences.</p>
+                <a href="https://github.com/mostafaalishahi/Genetic_engineering_attribution_challenge_2020" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Milan Critical Care Datathon</h3>
+                <p>Won <strong>First Prize</strong>, sponsored by Google, among <strong>10</strong> competing teams for developing an algorithm to predict the need for blood gas analysis in critically ill ICU patients.</p>
+                <a href="https://magazine.fbk.eu/en/news/fbk-trentinosalute4-0-researchers-winners-of-milan-critical-care-unit-datathon-2019/" target="_blank" class="btn">Learn More</a>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2><i class="fas fa-cogs"></i> Skills</h2>
-        <div class="skills-container">
-            <div class="skill-set">
-                <h3>Technical Skills</h3>
-                <div class="skill">
-                    <h4><i class="fas fa-code"></i> Programming Languages</h4>
-                    <p>Python, Bash</p>
+        <section id="skills" class="section-card">
+            <h2><i class="fas fa-cogs"></i> Skills</h2>
+            <div class="skills-container">
+                <div class="skill-set">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li><i class="fas fa-code"></i> Python, Bash</li>
+                        <li><i class="fas fa-database"></i> Pandas, Polars, Numpy, Scipy</li>
+                        <li><i class="fas fa-robot"></i> Keras, Pytorch, Captum, Flower</li>
+                        <li><i class="fas fa-brain"></i> OpenAI API, Llama3, LlamaIndex</li>
+                        <li><i class="fas fa-tools"></i> Kubernetes, Docker, GitHub, MLflow</li>
+                        <li><i class="fas fa-cloud"></i> AWS Sagemaker, S3, Glue, Lambda</li>
+                    </ul>
                 </div>
-                <div class="skill">
-                    <h4><i class="fas fa-database"></i> Data Analysis</h4>
-                    <p>Pandas, Polars, Numpy, Scipy</p>
-                </div>
-                <div class="skill">
-                    <h4><i class="fas fa-robot"></i> Machine Learning & AI</h4>
-                    <p>Keras, Pytorch, Captum (Explainable AI), Flower (Federated Learning), Time-series Analysis</p>
-                </div>
-                <div class="skill">
-                    <h4><i class="fas fa-brain"></i> Large Language Models</h4>
-                    <p>OpenAI API, Llama3, LlamaIndex</p>
-                </div>
-                <div class="skill">
-                    <h4><i class="fas fa-tools"></i> DevOps & Tools</h4>
-                    <p>Kubernetes, Docker, GitHub, MLflow, Weights & Biases, Prefect, Grafana</p>
-                </div>
-                <div class="skill">
-                    <h4><i class="fas fa-cloud"></i> Cloud Services</h4>
-                    <p>AWS Sagemaker, AWS S3, AWS Glue, AWS Step Functions, AWS Lambda</p>
+                <div class="skill-set">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li><i class="fas fa-lightbulb"></i> Analytical Thinking</li>
+                        <li><i class="fas fa-cogs"></i> Creative Problem-Solving</li>
+                        <li><i class="fas fa-comments"></i> Communication</li>
+                        <li><i class="fas fa-users"></i> Team Collaboration</li>
+                        <li><i class="fas fa-chalkboard-teacher"></i> Teaching & Mentoring</li>
+                        <li><i class="fas fa-language"></i> Multilingual</li>
+                    </ul>
                 </div>
             </div>
-            <div class="skill-set">
-                <h3>Soft Skills</h3>
-                <div class="skill">
-                    <h4><i class="fas fa-lightbulb"></i> Analytical Thinking</h4>
-                    <p>Strong ability to analyze complex problems and develop effective solutions.</p>
-                </div>
-                <div class="skill">
-                    <h4><i class="fas fa-cogs"></i> Creative Problem-Solving</h4>
-                    <p>Proven track record of innovative approaches to research and development challenges.</p>
-                </div>
-                <div class="skill">
-                    <h4><i class="fas fa-comments"></i> Communication</h4>
-                    <p>Excellent skills in presenting complex ideas clearly to both technical and non-technical audiences.</p>
-                </div>
-                <div class="skill">
-                    <h4><i class="fas fa-users"></i> Team Collaboration</h4>
-                    <p>Experience working effectively in multidisciplinary teams and mentoring students.</p>
-                </div>
-                <div class="skill">
-                    <h4><i class="fas fa-chalkboard-teacher"></i> Teaching & Mentoring</h4>
-                    <p>Experienced in guiding and supporting students in their research projects.</p>
-                </div>
-                <div class="skill">
-                    <h4><i class="fas fa-language"></i> Languages</h4>
-                    <p>English (Fluent), Persian (Native), Italian (Fluent), German (Beginner)</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <h2><i class="fas fa-envelope"></i> Contact</h2>
-        <p>For any inquiries, collaborations, or to discuss research opportunities, please feel free to reach out to me via email.</p>
-        <p>Email: <a href="mailto:mostafa.alishahi@gmail.com">mostafa.alishahi@gmail.com</a></p>
-        <p>Location: Augsburg, Germany</p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/mostafa-sheikhalishahi-phd/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/mostafaalishahi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-    </section>
+        <section id="contact" class="section-card">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p>For inquiries, collaborations, or research opportunities, please reach out:</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:mostafa.alishahi@gmail.com">mostafa.alishahi@gmail.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Augsburg, Germany</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mostafa-sheikhalishahi-phd/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mostafaalishahi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Mostafa Sheikhalishahi</p>
+        <p>&copy; 2024 Mostafa Sheikhalishahi | Data Scientist and AI Researcher</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
