@@ -163,8 +163,51 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
+    body {
+        padding-bottom: 60px; /* Add space for the fixed bottom nav */
+    }
+
     header h1 {
         font-size: 2.5em;
     }
@@ -178,8 +221,8 @@ footer {
         bottom: 0;
         left: 0;
         right: 0;
+        top: auto;
         background-color: #333;
-        z-index: 1000;
     }
 
     nav ul {
@@ -212,56 +255,6 @@ footer {
     }
 
     main {
-        padding-bottom: 70px; /* Increase space for the fixed bottom nav */
+        padding-bottom: 80px; /* Increase space for the fixed bottom nav */
     }
-
-    body {
-        padding-top: 0; /* Remove any top padding */
-    }
-
-    /* Remove any fixed positioning on the body or html */
-    html, body {
-        position: static;
-        overflow-x: hidden;
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Button styles */
-.btn {
-    display: inline-block;
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
 }
